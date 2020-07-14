@@ -401,10 +401,12 @@ button:hover{
     
     & .popular_item-title{
       transition-delay: 0.1s;
+      transition-timing-function: easy;
     }
 
     & .popular_item-controls{
       transition-delay: 0.3s;
+      transition-timing-function: easy;
     }
   }
 

@@ -356,9 +356,11 @@ button:hover {
   .popular_item:hover .popular_item-controls, .popular_item:hover .popular_item-title, .popular_item:hover .popular_item-price {
     top: 0; }
   .popular_item:hover .popular_item-title {
-    transition-delay: 0.1s; }
+    transition-delay: 0.1s;
+    transition-timing-function: easy; }
   .popular_item:hover .popular_item-controls {
-    transition-delay: 0.3s; }
+    transition-delay: 0.3s;
+    transition-timing-function: easy; }
   .popular .slick-slide {
     margin: 0 10px; }
   .popular .slick-list {
