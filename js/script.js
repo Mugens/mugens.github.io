@@ -65,9 +65,9 @@ $(document).ready(function(){
   })
 });
 
-// $(window).on('load', function() {
-//   $('.loader_overlay').fadeOut().end().delay(400).fadeOut('slow');
-// });
+$(window).on('load', function() {
+  $('.loader_overlay').fadeOut().end().delay(400).fadeOut('slow');
+});
 
 
 $(window).resize(()=>{
