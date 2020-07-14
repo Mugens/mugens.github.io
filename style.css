@@ -359,7 +359,7 @@ button:hover {
     transition-delay: 0.1s;
     transition-timing-function: easy; }
   .popular_item:hover .popular_item-controls {
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
     transition-timing-function: easy; }
   .popular .slick-slide {
     margin: 0 10px; }
