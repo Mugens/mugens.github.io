@@ -397,16 +397,15 @@ button:hover{
   &_item:hover{
     & .popular_item-controls,& .popular_item-title,& .popular_item-price{
       top: 0;
+      transition: all 0.5s ease;
     }
     
     & .popular_item-title{
       transition-delay: 0.1s;
-      transition-timing-function: easy;
     }
 
     & .popular_item-controls{
       transition-delay: 0.2s;
-      transition-timing-function: easy;
     }
   }
 

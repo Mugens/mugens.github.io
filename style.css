@@ -354,13 +354,12 @@ button:hover {
         vertical-align: baseline;
         font-weight: normal; }
   .popular_item:hover .popular_item-controls, .popular_item:hover .popular_item-title, .popular_item:hover .popular_item-price {
-    top: 0; }
+    top: 0;
+    transition: all 0.5s ease; }
   .popular_item:hover .popular_item-title {
-    transition-delay: 0.1s;
-    transition-timing-function: easy; }
+    transition-delay: 0.1s; }
   .popular_item:hover .popular_item-controls {
-    transition-delay: 0.2s;
-    transition-timing-function: easy; }
+    transition-delay: 0.2s; }
   .popular .slick-slide {
     margin: 0 10px; }
   .popular .slick-list {
