@@ -471,6 +471,21 @@ button:hover {
       .footer .subscribe_btn:hover {
         cursor: pointer; }
 
+.breadcrumb {
+  padding: 20px 0; }
+  .breadcrumb_item {
+    font-size: 18px; }
+    .breadcrumb_item::after {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 15px;
+      content: '\f105';
+      padding: 0 10px; }
+    .breadcrumb_item:hover {
+      color: #2b770a; }
+    .breadcrumb_item:last-child::after {
+      content: ""; }
+
 @media (min-width: 1200px) {
   .popular .slick-prev {
     left: -25px; }
@@ -478,7 +493,7 @@ button:hover {
     right: -25px; } }
 
 @media (min-width: 992px) {
-  .categories__menu {
+  .categories__menu.categories__home {
     display: block; }
   .baner {
     margin-bottom: 20px; }
