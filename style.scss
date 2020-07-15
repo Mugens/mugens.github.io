@@ -338,6 +338,25 @@ button:hover{
   overflow: hidden;
   &_item{
     position: relative;
+    &-link{
+      position: relative;
+      display: block;
+    }
+    &-disc{
+      position: absolute;
+      z-index: 200;
+      bottom: 10px;
+      right: 10px;
+      width: 72px;
+      height: 74px;
+      background: url(/img/stick_disc.png) no-repeat center;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 0 #ba3434;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 74px;
+    }
     &-img{
       position: relative;
       z-index: 100;
@@ -384,12 +403,19 @@ button:hover{
       font-size: 24px;
       line-height: 1.2;
       color: #ff602a;
-      span{
+      &>span:not(&-disc){
         font-size: 18px;
         line-height: 1.2;
         vertical-align: baseline;
         font-weight: normal;
 
+      }
+      &-disc{
+        text-decoration: line-through;
+        font-size: 18px;
+        padding-left: 20px;
+        color: $btns-color;
+        font-weight: lighter;
       }
     }
   }
