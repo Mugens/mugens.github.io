@@ -6,14 +6,6 @@ $(document).ready(function(){
     dots: true
   });
 
-  // $('.popular_items').slick({
-  //   arrows:         false,
-  //   autoplay:       true,
-  //   autoplaySpeed:  4500,
-  //   infinite:       true,
-  //   slidesToShow:   2,
-  //   slidesToScroll: 1
-  // });
   $('.popular_items').slick({
     dots: false,
     arrows: true,
@@ -67,6 +59,8 @@ $(document).ready(function(){
 
 $(window).on('load', function() {
   $('.loader_overlay').fadeOut().end().delay(400).fadeOut('slow');
+
+  $('.video .video_wraper').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/0AHaw7BN2mE" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>');
 });
 
 
