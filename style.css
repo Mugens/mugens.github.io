@@ -247,10 +247,14 @@ button:hover {
     .search__btn:hover {
       cursor: pointer; }
 
-.baner {
+.banner {
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden; }
+  .banner_item {
+    min-height: 390px; }
+    .banner_item > a {
+      display: block; }
 
 .services {
   padding-top: 10px;

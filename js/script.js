@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   //----------Slider
-  $('.baner').slick({
+  $('.banner').slick({
     arrows: false,
     dots: true
   });
@@ -71,5 +71,5 @@ $(window).on('load', function() {
 
 
 $(window).resize(()=>{
-  $('.baner').slick('refresh');
+  $('.banner').slick('refresh');
 })

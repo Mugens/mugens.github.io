@@ -254,10 +254,17 @@ button:hover{
   }
 }
 //-------------------Baner------------------------
-.baner{
+.banner{
  padding-top: 10px;
  padding-bottom: 10px;
  overflow: hidden;
+ &_item{
+   min-height: 390px;
+  &>a{
+    display: block;
+  }
+ }
+
 }
 //----------------------Services-------------------
 .services{
