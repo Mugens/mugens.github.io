@@ -55,6 +55,13 @@ $(document).ready(function(){
     $(this).toggleClass('fa-times');
     $('.categories__menu').toggleClass('d-block')
   })
+
+  //----------More----------------
+  $('.shop_info-more').on('click',function(e){
+    e.preventDefault();
+    $(this).hide();
+    $('.shop_info').height('auto');
+  })
 });
 
 $(window).on('load', function() {

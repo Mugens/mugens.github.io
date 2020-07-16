@@ -39,7 +39,7 @@ img{
   height: auto;
 }
 li{
-  list-style: none;
+ list-style: none;
 }
 button{
   background-color: $basic-color;
@@ -547,22 +547,7 @@ button:hover{
    
   }
 }
-//-----------------Info------------------------
-.info{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  &_title{
-    font-size: 30px;
-    color: $basic-color;
-    padding-bottom: 20px;
-    line-height: 1.2;
-  }
-  p{
-    font-size: 14px;
-    padding-bottom: 20px;
-    line-height: 1.5;
-  }
-}
+
 //-------------------Footer--------------------
 .footer{
   background-color: #e8e8e8;
@@ -658,6 +643,50 @@ button:hover{
   &_products{
     display: flex;
     flex-flow: row wrap;
+  }
+  &_info{
+    margin-bottom: 40px;
+    position: relative;
+    height: 145px;
+    overflow: hidden;
+    h3{
+      font-size: 30px;
+      color: $basic-color;
+      padding-bottom: 20px;
+      line-height: 1.2;
+    }
+    h5{
+      font-size: 20px;
+      color: $basic-color;
+      padding-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+      padding-bottom: 20px;
+      line-height: 1.5;
+    }
+    ul,ol{
+      font-size: 14px;
+      padding-bottom: 20px;
+      line-height: 1.5;
+      padding-inline-start: 40px;
+    }
+    ul>li{
+      list-style-type: disc;
+    }
+    ol>li{
+      list-style-type: decimal;
+    }
+    &-more{
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      text-align: right;
+      background-color: #fff;
+      a{
+        color: $basic-color;
+      }
+    }
   }
 }
 .breadcrumb{
@@ -785,7 +814,7 @@ button:hover{
 .pagination{
   text-align: center;
   padding: 20px 0;
-  li:not(&_next,&_prev){
+  &>ul>li:not(&_next,&_prev){
     display: inline-block;
     padding: 0 3px;
   }
@@ -821,6 +850,7 @@ button:hover{
     }
   }
 }
+
 
 
 
