@@ -688,6 +688,57 @@ button:hover{
       }
     }
   }
+  &_filter{
+    background-color: #eefcea;
+    padding: 10px;
+    &-title{
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .smartfilter{
+      display: flex;
+      flex-flow: column;
+      input[type="text"]{
+        width: 100%;
+        border: 1px solid #ccd5db;
+        font-size: 18px;
+        height: 38px;
+        padding: 0 4px;
+        outline: 0;
+        border-radius: 2px;
+        margin-bottom: 20px;
+      }
+      input:focus{
+        border-color: #3bc915;
+      }
+      &_title{
+        padding-bottom: 10px;
+        &:hover{
+          cursor: pointer;
+        }
+        i{
+          color: $basic-color;
+          vertical-align: middle;
+        }
+      }
+      &_body{
+        display: none;
+        padding-bottom: 20px;
+      }
+      &_controls{
+        display: flex;
+        justify-content: space-around;
+        button{
+          padding: 10px 20px;
+        }
+      }
+      &_clear{
+        background-color: #fff;
+        color: black;
+      }
+    }
+  }
 }
 .breadcrumb{
   padding: 20px 0;
@@ -814,7 +865,7 @@ button:hover{
 .pagination{
   text-align: center;
   padding: 20px 0;
-  &>ul>li:not(&_next,&_prev){
+  & li{
     display: inline-block;
     padding: 0 3px;
   }
@@ -835,7 +886,7 @@ button:hover{
     color: #fff;
     pointer-events: none;
   }
-  &_next,&_prev{
+  & &_next, & &_prev{
     display: block;
     padding: 10px;
   }
@@ -849,6 +900,10 @@ button:hover{
       border-color: #dadada;
     }
   }
+}
+//----------slider-range--------
+.irs--flat .irs-bar,.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single,.irs--flat .irs-handle>i:first-child{
+  background-color: $basic-color;
 }
 
 

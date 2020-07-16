@@ -9,6 +9,7 @@
   <link preload rel="stylesheet" href="/css/bootstrap-grid.min.css">
   <link preload rel="stylesheet" href="/css/slick.css">
   <link preload rel="stylesheet" href="/css/slick-theme.css">
+  <link rel="stylesheet" href="/css/ion.rangeSlider.min.css">
   
 
   <link  rel="stylesheet" href="/style.css">
@@ -193,7 +194,61 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3">
             <div class="shop_filter">
-              
+              <p class="shop_filter-title">
+                Подбор параметров
+              </p>
+              <form action="#" class="smartfilter">
+                <div class="smartfilter_item">
+                  <p class="smartfilter_title">
+                    Розничная цена
+                    <i class="fa fa-angle-down"></i> 
+                  </p>
+                  <div class="smartfilter_body d-block">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>От</p>
+                        <input type="text" name="from" value="0">
+                      </div>
+                      <div class="col-6">
+                        <p>До</p>
+                        <input type="text" name="from" value="1000">
+                      </div>
+                      <div class="col-12">
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="smartfilter_item">
+                  <p class="smartfilter_title">
+                    Фруктовые вкусы
+                    <i class="fa fa-angle-down"></i> 
+                  </p>
+                  <div class="smartfilter_body">
+                    <div class="row">
+                      <div class="col-12">
+                        <div>
+                          <input type="checkbox" name="1" id="radio1">
+                          <label for="radio1">Абрикос (1)</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" name="2" id="radio2">
+                          <label for="radio2">Ананас (4)</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" name="3" id="radio3">
+                          <label for="radio3">Апельсин (2)</label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="smartfilter_controls">
+                  <button type="submit" class="smartfilter_show">Показать</button>
+                  <button class="smartfilter_clear">Сбросить</button>
+                </div>
+              </form>
             </div>
           </div>
           <div class="col-12 col-md-8 col-lg-9">
@@ -565,8 +620,10 @@
       </div>
     </div>
   </footer>
-  <script defer src="/js/jquery-3.5.1.min.js"></script>
+  <!-- <script defer src="/js/jquery-3.5.1.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script defer src="/js/slick.min.js"></script>
+  <script src="/js/ion.rangeSlider.min.js"></script>
   <script defer src="/js/script.js"></script>
 </body>
 

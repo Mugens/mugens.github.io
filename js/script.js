@@ -62,6 +62,23 @@ $(document).ready(function(){
     $(this).hide();
     $('.shop_info').height('auto');
   })
+
+  //--------Slider Range------------
+  
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 500,
+    grid: true
+});
+
+  //--------smratfilter togle------------
+  $('.smartfilter_title').on('click', function(){
+    $(this).siblings().toggleClass('d-block');
+    $(this).children().toggleClass('fa-angle-down fa-angle-up')
+  })
 });
 
 $(window).on('load', function() {

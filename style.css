@@ -498,6 +498,46 @@ button:hover {
     .shop_info-more a {
       color: #2b770a; }
 
+.shop_filter {
+  background-color: #eefcea;
+  padding: 10px; }
+  .shop_filter-title {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px; }
+  .shop_filter .smartfilter {
+    display: flex;
+    flex-flow: column; }
+    .shop_filter .smartfilter input[type="text"] {
+      width: 100%;
+      border: 1px solid #ccd5db;
+      font-size: 18px;
+      height: 38px;
+      padding: 0 4px;
+      outline: 0;
+      border-radius: 2px;
+      margin-bottom: 20px; }
+    .shop_filter .smartfilter input:focus {
+      border-color: #3bc915; }
+    .shop_filter .smartfilter_title {
+      padding-bottom: 10px; }
+      .shop_filter .smartfilter_title:hover {
+        cursor: pointer; }
+      .shop_filter .smartfilter_title i {
+        color: #2b770a;
+        vertical-align: middle; }
+    .shop_filter .smartfilter_body {
+      display: none;
+      padding-bottom: 20px; }
+    .shop_filter .smartfilter_controls {
+      display: flex;
+      justify-content: space-around; }
+      .shop_filter .smartfilter_controls button {
+        padding: 10px 20px; }
+    .shop_filter .smartfilter_clear {
+      background-color: #fff;
+      color: black; }
+
 .breadcrumb {
   padding: 20px 0; }
   .breadcrumb_item {
@@ -598,7 +638,7 @@ button:hover {
 .pagination {
   text-align: center;
   padding: 20px 0; }
-  .pagination > ul > li {
+  .pagination li {
     display: inline-block;
     padding: 0 3px; }
   .pagination_link {
@@ -615,7 +655,7 @@ button:hover {
     background-color: #2b770a;
     color: #fff;
     pointer-events: none; }
-  .pagination_next, .pagination_prev {
+  .pagination .pagination_next, .pagination .pagination_prev {
     display: block;
     padding: 10px; }
   .pagination_next > a, .pagination_prev > a {
@@ -626,6 +666,9 @@ button:hover {
     padding: 5px 15px; }
     .pagination_next > a:hover, .pagination_prev > a:hover {
       border-color: #dadada; }
+
+.irs--flat .irs-bar, .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single, .irs--flat .irs-handle > i:first-child {
+  background-color: #2b770a; }
 
 @media (min-width: 1200px) {
   .popular .slick-prev {
@@ -672,6 +715,6 @@ button:hover {
     height: 20px; }
   .product {
     width: 33%; }
-  .pagination_next, .pagination_prev {
+  .pagination .pagination_next, .pagination .pagination_prev {
     display: inline-block;
     padding: 0; } }

@@ -66,7 +66,7 @@
     width: 33%;
   }
   .pagination{
-    &_next,&_prev{
+    & &_next,& &_prev{
       display: inline-block;
       padding: 0;
     }
