@@ -161,7 +161,7 @@ button:hover{
   position: absolute;
   width: 100%;
   background-color: #fff;
-  z-index: 10;
+  z-index: 500;
   &__item{
     display: flex;
     align-items: center;
@@ -654,7 +654,12 @@ button:hover{
 
 
 //-------------------SHop--------------------
-
+.shop{
+  &_products{
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
 .breadcrumb{
   padding: 20px 0;
   &_item{
@@ -671,6 +676,148 @@ button:hover{
     }
     &:last-child::after{
       content: "";
+    }
+  }
+}
+.product{
+  position: relative;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  &_link{
+    position: relative;
+    display: block;
+  }
+  &_disc{
+    position: absolute;
+    z-index: 200;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 47px;
+    background: url(/img/stick_disc.png) no-repeat center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 0 #ba3434;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 3.5;
+    background-size: 100%;
+  }
+  &_img{
+    position: relative;
+    z-index: 100;
+  }
+  &_controls{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top:-80px;
+    .quantity{
+      display: flex;
+      justify-content: center;
+      &-btns{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+      }
+      &-input{
+        width: 40px;
+        border-radius: 4px;
+        margin: 0 10px;
+        text-align: center;
+      }
+    }
+    .btn-buy{
+      width: 100%;
+      max-width: 120px;
+      height: 30px;
+      font-size: 20px;
+      margin: 10px auto;
+    }
+  }
+  &_title{
+    position: relative;
+    top:-80px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  &_price{
+    position: relative;
+    top:-80px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ff602a;
+    &>span:not(&-disc){
+      font-size: 18px;
+      line-height: 1.2;
+      vertical-align: baseline;
+      font-weight: normal;
+
+    }
+    &-disc{
+      text-decoration: line-through;
+      font-size: 15px;
+      padding-left: 20px;
+      color: $btns-color;
+      font-weight: lighter;
+    }
+  }
+  &:hover{
+    & .product_controls,& .product_title,& .product_price{
+      top: 0;
+      transition: all 0.5s ease;
+    }
+    
+    & .product_title{
+      transition-delay: 0.1s;
+    }
+
+    & .product_controls{
+      transition-delay: 0.2s;
+    }
+  }
+
+}
+.pagination{
+  text-align: center;
+  padding: 20px 0;
+  li:not(&_next,&_prev){
+    display: inline-block;
+    padding: 0 3px;
+  }
+  &_link{
+    display: block;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 2.4;
+    font-size: 14px;
+    &:hover{
+      background-color: #c2c2c2;
+    }
+  }
+  &_active{
+    background-color: $basic-color;
+    color: #fff;
+    pointer-events: none;
+  }
+  &_next,&_prev{
+    display: block;
+    padding: 10px;
+  }
+  &_next>a,&_prev>a{
+    width: 100px;
+    border: 2px solid #eff0f1;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 5px 15px;
+    &:hover{
+      border-color: #dadada;
     }
   }
 }

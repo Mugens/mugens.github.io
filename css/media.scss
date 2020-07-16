@@ -33,6 +33,20 @@
       border: none;
     }
   }
+  .product{
+    &_disc{
+      width: 72px;
+      height: 74px;
+      font-size: 23px;
+      line-height: 74px;
+    }
+    &_price{
+      font-size: 24px;
+      &-disc{
+        font-size: 18px;
+      }
+    }
+  }
 }
 @media (min-width: 768px){
   .products_item{
@@ -47,7 +61,16 @@
     width: 20px;
     height: 20px;
   }
-  
+
+  .product{
+    width: 33%;
+  }
+  .pagination{
+    &_next,&_prev{
+      display: inline-block;
+      padding: 0;
+    }
+  }
 
 }
 

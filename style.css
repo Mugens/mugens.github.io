@@ -116,7 +116,7 @@ button:hover {
   position: absolute;
   width: 100%;
   background-color: #fff;
-  z-index: 10; }
+  z-index: 500; }
   .nav-left__item {
     display: flex;
     align-items: center;
@@ -471,6 +471,10 @@ button:hover {
       .footer .subscribe_btn:hover {
         cursor: pointer; }
 
+.shop_products {
+  display: flex;
+  flex-flow: row wrap; }
+
 .breadcrumb {
   padding: 20px 0; }
   .breadcrumb_item {
@@ -485,6 +489,120 @@ button:hover {
       color: #2b770a; }
     .breadcrumb_item:last-child::after {
       content: ""; }
+
+.product {
+  position: relative;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .product_link {
+    position: relative;
+    display: block; }
+  .product_disc {
+    position: absolute;
+    z-index: 200;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 47px;
+    background: url(/img/stick_disc.png) no-repeat center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 0 #ba3434;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 3.5;
+    background-size: 100%; }
+  .product_img {
+    position: relative;
+    z-index: 100; }
+  .product_controls {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: -80px; }
+    .product_controls .quantity {
+      display: flex;
+      justify-content: center; }
+      .product_controls .quantity-btns {
+        width: 30px;
+        height: 30px;
+        font-size: 20px; }
+      .product_controls .quantity-input {
+        width: 40px;
+        border-radius: 4px;
+        margin: 0 10px;
+        text-align: center; }
+    .product_controls .btn-buy {
+      width: 100%;
+      max-width: 120px;
+      height: 30px;
+      font-size: 20px;
+      margin: 10px auto; }
+  .product_title {
+    position: relative;
+    top: -80px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: normal; }
+  .product_price {
+    position: relative;
+    top: -80px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ff602a; }
+    .product_price > span:not(.product_price-disc) {
+      font-size: 18px;
+      line-height: 1.2;
+      vertical-align: baseline;
+      font-weight: normal; }
+    .product_price-disc {
+      text-decoration: line-through;
+      font-size: 15px;
+      padding-left: 20px;
+      color: #4e4a4b;
+      font-weight: lighter; }
+  .product:hover .product_controls, .product:hover .product_title, .product:hover .product_price {
+    top: 0;
+    transition: all 0.5s ease; }
+  .product:hover .product_title {
+    transition-delay: 0.1s; }
+  .product:hover .product_controls {
+    transition-delay: 0.2s; }
+
+.pagination {
+  text-align: center;
+  padding: 20px 0; }
+  li {
+    display: inline-block;
+    padding: 0 3px; }
+  .pagination_link {
+    display: block;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 2.4;
+    font-size: 14px; }
+    .pagination_link:hover {
+      background-color: #c2c2c2; }
+  .pagination_active {
+    background-color: #2b770a;
+    color: #fff;
+    pointer-events: none; }
+  .pagination_next, .pagination_prev {
+    display: block;
+    padding: 10px; }
+  .pagination_next > a, .pagination_prev > a {
+    width: 100px;
+    border: 2px solid #eff0f1;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 5px 15px; }
+    .pagination_next > a:hover, .pagination_prev > a:hover {
+      border-color: #dadada; }
 
 @media (min-width: 1200px) {
   .popular .slick-prev {
@@ -508,7 +626,16 @@ button:hover {
       padding: 0;
       padding-right: 20px; }
     .nav-top--links:first-child {
-      border: none; } }
+      border: none; }
+  .product_disc {
+    width: 72px;
+    height: 74px;
+    font-size: 23px;
+    line-height: 74px; }
+  .product_price {
+    font-size: 24px; }
+    .product_price-disc {
+      font-size: 18px; } }
 
 @media (min-width: 768px) {
   .products_item {
@@ -519,4 +646,9 @@ button:hover {
     left: 100%; }
   .slick-dots li button {
     width: 20px;
-    height: 20px; } }
+    height: 20px; }
+  .product {
+    width: 33%; }
+  .pagination_next, .pagination_prev {
+    display: inline-block;
+    padding: 0; } }
