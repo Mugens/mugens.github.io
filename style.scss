@@ -691,6 +691,7 @@ button:hover{
   &_filter{
     background-color: #eefcea;
     padding: 10px;
+    margin-bottom: 30px;
     &-title{
       text-align: center;
       font-size: 20px;
@@ -898,6 +899,21 @@ button:hover{
     padding: 5px 15px;
     &:hover{
       border-color: #dadada;
+    }
+  }
+}
+.watched{
+  padding-bottom: 10px;
+  &_title{
+    text-align: center;
+    color: $basic-color;
+    font-size: 20px;
+  }
+  &_product{
+    display: flex;
+    flex-flow: row wrap;
+    .product{
+      max-width: 220px;
     }
   }
 }
