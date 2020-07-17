@@ -539,6 +539,23 @@ button:hover {
       background-color: #fff;
       color: black; }
 
+.shop_banner {
+  display: block; }
+
+.shop_sort {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center; }
+  .shop_sort label {
+    padding-right: 10px;
+    font-size: 15px; }
+  .shop_sort select {
+    padding: 5px;
+    font-size: 14px; }
+  .shop_sort option {
+    padding: 5px 10px; }
+
 .breadcrumb {
   padding: 20px 0; }
   .breadcrumb_item {

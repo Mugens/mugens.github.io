@@ -740,6 +740,26 @@ button:hover{
       }
     }
   }
+  &_banner{
+    display: block;
+  }
+  &_sort{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    label{
+      padding-right: 10px;
+      font-size: 15px;
+    }
+    select{
+      padding: 5px;
+      font-size: 14px;
+    }
+    option{
+      padding: 5px 10px;
+    }
+  }
 }
 .breadcrumb{
   padding: 20px 0;
