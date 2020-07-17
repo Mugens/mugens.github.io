@@ -72,5 +72,11 @@
     }
   }
 
+  .product-card{
+    &_tabs{
+      flex-flow: row;
+    }
+  }
+
 }
 

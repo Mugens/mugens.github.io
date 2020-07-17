@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="/css/loader.css">
   
   <link preload rel="stylesheet" href="/css/bootstrap-grid.min.css">
-  <link preload rel="stylesheet" href="/css/slick.css">
-  <link preload rel="stylesheet" href="/css/slick-theme.css">
-  <link rel="stylesheet" href="/css/ion.rangeSlider.min.css">
+
   
 
   <link  rel="stylesheet" href="/style.css">
@@ -183,367 +181,106 @@
       </div>
     </section>
 
-    <section class="shop">
+    <section class="product-card">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="breadcrumb">
               <a href="/" class="breadcrumb_item">Главная</a>
               <a href="/shop.html" class="breadcrumb_item">Жидкости для электронных сигарет</a>
+              <a href="/product.html" class="breadcrumb_item">Экспресс-тест на коронавирус BIOASSAY</a>
             </div>
+            <h1 class="product-card_title">
+                Экспресс-тест на коронавирус BIOASSAY
+            </h1>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="shop_filter">
-              <p class="shop_filter-title">
-                Подбор параметров
-              </p>
-              <form action="#" class="smartfilter">
-                <div class="smartfilter_item">
-                  <p class="smartfilter_title">
-                    Розничная цена
-                    <i class="fa fa-angle-down"></i> 
-                  </p>
-                  <div class="smartfilter_body d-block">
-                    <div class="row">
-                      <div class="col-6">
-                        <p>От</p>
-                        <input type="text" name="from" value="200" min="0" max="1000">
-                      </div>
-                      <div class="col-6">
-                        <p>До</p>
-                        <input type="text" name="from" value="500" min="0" max="1000">
-                      </div>
-                      <div class="col-12">
-                        <input type="text" class="js-range-slider" name="my_range" value="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="smartfilter_item">
-                  <p class="smartfilter_title">
-                    Фруктовые вкусы
-                    <i class="fa fa-angle-down"></i> 
-                  </p>
-                  <div class="smartfilter_body">
-                    <div class="row">
-                      <div class="col-12">
-                        <div>
-                          <input type="checkbox" name="1" id="radio1">
-                          <label for="radio1">Абрикос (1)</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" name="2" id="radio2">
-                          <label for="radio2">Ананас (4)</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" name="3" id="radio3">
-                          <label for="radio3">Апельсин (2)</label>
-                        </div>
+          <div class="col-12  col-xl-9">
+            <div class="row">
 
-                      </div>
-                    </div>
+              <div class="col-12 col-md-6">
+                <div class="product-card_image-container">
+                  <img src="/img/covid.png" alt="covid">
+                </div>
+                <ul class="product-card_image-slider">
+                  <li>
+                    <span style="background-image: url(/img/covid.png);" ></span>
+                  </li>
+                  <li>
+                    <span style="background-image: url(/img/covid.png);" ></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="product-card_info">
+                  <p class="product-card_stock">
+                    В наличии
+                  </p>
+                  <div class="product-card_price">
+                    300 <span>&#8372</span>
+                    <p>Цена 300 грн за 1 шт</p>
+                  </div>
+                  <div class="product-card_controls">
+                    <button class="quantity">-</button>
+                    <input type="text" class="quantity_input" value="0">
+                    <button class="quantity">+</button>
+                    <button class="product-card_controls-buy">Купить</button>
+                  </div>
+                  <div class="product-card_desc">
+                    Bioassay Rapid Diagnostic Test COVID-19 IgM / IgG - це діагностичний тест in vitro для якісного визначення IgM COVID-19 і антитіл IgG в цільній крові (з вени або пальця), сироватці, плазмі.Тест призначений для використання професіоналами як скринінговий тест і як допоміжний засіб при діагностиці зараження вірусами nCoV-19.
+                  </div>
+                  <div class="product-card_social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                   </div>
                 </div>
-                <div class="smartfilter_controls">
-                  <button type="submit" class="smartfilter_show">Показать</button>
-                  <button class="smartfilter_clear">Сбросить</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-9">
-            <form action="#" class="shop_sort">
-              <label for="sort">Сортировать:</label>
-              <select name="shop_sort-select" id="sort">
-                <option value="От дешевых к дорогим">От дешевых к дорогим</option>
-                <option value="От дорогих к дешевым">От дорогих к дешевым</option>
-                <option value="Популярные">Популярные</option>
-                <option value="Акция">Акция</option>
-                <option value="Новинки">Новинки</option>
-              </select>
-            </form>
-            <a href="/shop.html" class="shop_banner">
-              <img src="/img/img_top.jpg" alt="baaner">
-            </a>
-            <div class="shop_products">
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-              <article class="product">
-                <a class="product_link" href="/product.html">
-                  <img src="/img/covid.webp" alt="" class="product_img">
-                  <span class="product_disc">-27%</span>
-                </a>
-                <div class="product_controls">
-                  <div class="quantity">
-                    <button class="quantity-btns">-</button>
-                    <input type="text" name="quantity"  class="quantity-input">
-                    <button class="quantity-btns">+</button>
-                  </div>
-                  <button class="btn-buy">
-                    Купить
-                  </button>
-                </div>
-                <h5 class="product_title">
-                  Жидкость Herbal Vape: 
-                  Ginger (Имбирь)
-                </h5>
-                <p class="product_price">400 <span>&#8372</span><span class="product_price-disc">292 <span>&#8372</span></span></p>
-              </article>
-            </div>
-            <div class="pagination">
-              <ul>
-                <li class="pagination_prev">
-                  <a href="#">Назад</a>
-                </li>
-                <li>
-                  <a class="pagination_active pagination_link" href="#">1</a>
-                </li>
-                <li>
-                  <a class="pagination_link"  href="#">2</a>
-                </li>
-                <li>
-                  <a class="pagination_link" href="#">3</a>
-                </li>
-                <li>
-                  <a class="pagination_link" href="#">4</a>
-                </li>
-                <li>
-                  <a class="pagination_link" href="#">50</a>
-                </li>
-                <li class="pagination_next">
-                  <a href="#">Вперед</a>
-                </li>
-              </ul>
-            </div>
-            <div class="shop_info">
-              <h5>
-                Что такое жидкость для электронных сигарет?
-              </h5>
-              <p>
-                Жидкости для электронных сигарет (на профессиональном сленге вейперов "жижа") – это неотъемлемый элемент любого атомайзера. Жижа состоят из нескольких элементов, в частых случаях, содержат никотин, который поможет заядлым курильщикам бросить курить. Необходимо также учитывать еще одно преимущество жидкости для сигарет – наличие вкусовых добавок, которые сделают избавление от вредной привычки легким и даже вкусным.
-              </p>
-              <h5>
-                Состав жидкости
-              </h5>
-              <p>
-                Пропиленгликоль и глицерин, называемые еще базой или основой, в обязательном порядке входят в жидкость для электронных сигарет. Это два базовых ингредиента. Никотин и ароматизаторы - необязательные компоненты.
-              </p>
-              <ul>
-                <li>
-                  Пропиленгликоль - вязкое и бесцветное вещество с незначительно выраженным приятным запахом. Его применяют в медицине как замену плазмы крови. Не токсичен и безвреден для человеческого организма.
-                </li>
-                <li>
-                  Глицерин - еще одна прозрачная жидкость с маслянистой структурой. Используют в пищевой промышленности при выпечке хлебных и шоколадных изделий. Как и пропиленгликоль, глицерин безвреден для человека.
-                </li>
-              </ul>
-              <h5>
-                Виды жижи
-              </h5>
-              <p>
-                Представленные на рынке заправки для электронных сигарет делятся на два вида по цене: премиум и обычные. Первые дороже, но на это есть ряд объективных причин. Во-первых, премиум изготовляется из более очищенного сырья и дорогих ароматизаторов. Во-вторых, создается по авторским рецептам (крафтовая жижа), поэтому обладает неповторимым вкусом.
-              </p>
-              <p>
-                Также, жижа для вейпа делится на шесть групп по вкусу, которые часто смешиваются для создания новых ароматов.
-              </p>
-              <p>Вкусовые группы жидкости для парения:</p>
-              <ul>
-                <li>табачные;</li>
-                <li>фруктовые;</li>
-                <li>со вкусом орехов;</li>
-                <li>со вкусом напитков;</li>
-                <li>со вкусом сладостей и пряностей;</li>
-                <li>освежающие вкусы (ментол и мята).</li>
-              </ul>
-              <p>
-                Выбор группы - это дело только вкуса вейпера, но курильщики бросившие курить выбирают табачные заправки.
-              </p>
-              <h5>
-                Содержание никотина
-              </h5>
-              <p>
-                Заправки для парения по содержанию никотина условно делятся на 4 группы:
-              </p>
-              <ol>
-                <li>безникотиновая (0 мг/мл) - не содержит вредных веществ в своем составе и просто служит для наслаждения вкусом.</li>
-                <li>с низким содержанием никотина ( от 1,5 до 6 мг/мл) - послужит хорошим последним этапом перед вашим выбором бросить курить.</li>
-                <li>жижа со средним содержанием никотина ( от 6 до 12 мг/мл) - популярны при переходе с обычных сигарет у начинающих вейперов.</li>
-                <li>крепкая или с высоким содержанием никотина (от 6 и выше) можно сравнить с сигарами и крепким табаком.</li>
-              </ol>
-              <h5>
-                Ассортимент вейпа на Dekang Biz
-              </h5>
-              <p>
-                Наш вейп-магазин предлагает попробовать вкуснейшую продукцию для парения со всего мира. Еженедельно обновляющийся ассортимент и десятки акций позволят купить жижу для вейпа даже для гурманов, и для этого просто нужно сделайте заказ на Dekang Biz.
-              </p>
-              <div class="shop_info-more">
-                <a  href="#">Подробнее...</a>
+          <div class="col-12  col-xl-3 	d-none d-xl-block">
+            <div class="product-card_right">
+              <div class="product-card_delivery">
+                <p>Доставка</p>
+                <dl class="product-card_delivery-item">
+                  <dt>Нова Пошта:</dt>
+                  <dd>50 грн</dd>
+                  <dt>Укрпошта:</dt>
+                  <dd>40 грн</dd>
+                  <dt>Любая другая на выбор</dt>
+                </dl>
               </div>
+              <div class="product-card_payment">
+                <p>Оплата</p>
+                <dl class="product-card_payment-item">
+                  <dt>Перевод на карту Приват Банка:</dt>
+                  <dd>0.5%</dd>
+                  <dt>Наложенный платеж (при получении товара):</dt>
+                  <dd>2%</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="product-card_delivery-img">
+              <img src="/img/delivery.jpg" alt="delivery">
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="product-card_tabs">
+              <li class="product-card_tabs-item active">
+                <a href="#" class="product-card_tabs-link">Описание</a>
+              </li>
+              <li class="product-card_tabs-item">
+                <a href="#" class="product-card_tabs-link">Характеристика</a>
+              </li>
+              <li class="product-card_tabs-item">
+                <a href="#" class="product-card_tabs-link">Отзывы (0)</a>
+              </li>
+              <li class="product-card_tabs-item">
+                <a href="#" class="product-card_tabs-link">Доставка</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              
             </div>
           </div>
           <div class="col-12 watched">
@@ -617,12 +354,10 @@
         </div>
       </div>
     </section>
-  
+
   </main>
 
-
-   <!-- Footer -->
-   <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -701,7 +436,7 @@
       </div>
     </div>
   </footer>
-  <script defer src="/js/jquery-3.5.1.min.js"></script> 
+  <script defer src="/js/jquery-3.5.1.min.js"></script>
   <script defer src="/js/slick.min.js"></script>
   <script defer src="/js/ion.rangeSlider.min.js"></script>
   <script defer src="/js/script.js"></script>
