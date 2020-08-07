@@ -64,15 +64,20 @@ $(document).ready(function(){
   })
 
   //--------Slider Range------------
+
+  if($(".js-range-slider").length){
+    $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 1000,
+      from: 200,
+      to: 500,
+      grid: true
+  });
+
+  }
   
-  $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1000,
-    from: 200,
-    to: 500,
-    grid: true
-});
+
 
   //--------smratfilter togle------------
   $('.smartfilter_title').on('click', function(){
@@ -82,7 +87,7 @@ $(document).ready(function(){
 });
 
 $(window).on('load', function() {
-  $('.loader_overlay').fadeOut().end().delay(400).fadeOut('slow');
+  $('.loader_overlay').fadeOut('slow').end().delay(400);
 
   $('.video .video_wraper').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/0AHaw7BN2mE" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>');
 });
