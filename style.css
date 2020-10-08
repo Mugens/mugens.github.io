@@ -123,7 +123,8 @@ button:hover {
     position: relative;
     font-size: 15px;
     font-weight: 500;
-    padding: 7px 0 7px 20px;
+    min-height: 57px;
+    padding-left: 20px;
     border-bottom: 1px solid #263321; }
   .nav-left__item:hover {
     cursor: pointer;
@@ -131,7 +132,9 @@ button:hover {
   .nav-left_icon {
     min-width: 40px;
     text-align: center;
-    margin-right: 10px; }
+    margin-right: 10px;
+    display: flex;
+    justify-content: center; }
   .nav-left .parent i {
     position: absolute;
     right: 30px;
@@ -202,7 +205,7 @@ button:hover {
     margin-bottom: 10px; }
   .services img {
     border-right: 1px solid #263321;
-    margin-right: 10px; }
+    padding-right: 20px; }
   .services_title {
     font-size: 25px;
     font-weight: lighter;

@@ -170,7 +170,8 @@ button:hover{
     font-size: 15px;
     font-weight: 500;
 
-    padding: 7px 0 7px 20px;
+    min-height: 57px;
+    padding-left: 20px;
 
     border-bottom: 1px solid #263321;
   }
@@ -182,6 +183,8 @@ button:hover{
     min-width: 40px;
     text-align: center;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   .parent{
@@ -286,7 +289,7 @@ button:hover{
   }
   img{
     border-right:  1px solid $basic-color-hover;
-    margin-right: 10px;
+    padding-right: 20px;
   }
   &_title{
     font-size: 25px;
