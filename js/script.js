@@ -89,7 +89,6 @@ $(document).ready(function(){
 
 
 $(window).on('load', function() {
-  $('.loader_overlay').fadeOut('2000').end().delay(400);
 
   $('.video .video_wraper').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/0AHaw7BN2mE" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>');
 });
